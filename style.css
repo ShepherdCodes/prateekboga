@@ -7,13 +7,13 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #fffbe6;
   color: #333;
 }
 
 header {
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #87edff;
+  color: #000000;
   padding: 2em 0;
   text-align: center;
 }
@@ -24,7 +24,7 @@ nav {
 
 nav a {
   margin: 0 15px;
-  color: #00bcd4;
+  color: #1a1a1a;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
