@@ -36,21 +36,6 @@
     }
   </style>
 </head>
-<script>
-  const slideIns = document.querySelectorAll('.slide-in');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target); // Remove to repeat animation on re-scroll
-      }
-    });
-  }, { threshold: 0.1 });
-
-  slideIns.forEach(section => {
-    observer.observe(section);
-  });
-</script>
 <body>
   <header>
     <h1>Prateek Boga</h1>
@@ -168,5 +153,20 @@
   <footer>
     <p>&copy; 2025 Prateek Boga. All rights reserved.</p>
   </footer>
+<script>
+  const slideIns = document.querySelectorAll('.slide-in');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Remove to repeat animation on re-scroll
+      }
+    });
+  }, { threshold: 0.1 });
+
+  slideIns.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 </body>
 </html>
