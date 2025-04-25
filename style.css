@@ -120,7 +120,7 @@ img {
 .carousel-track {
   display: flex;
   width: 300%;
-  animation: slide 10s infinite linear;
+  animation: slide 100s infinite linear;
 }
 
 .carousel-track img {
