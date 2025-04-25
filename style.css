@@ -88,6 +88,26 @@ img {
   transform: translateY(0);
 }
 
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap; /* so it looks good on mobile too */
+}
+
+.about-container img {
+  max-width: 180px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.about-container p {
+  flex: 1;
+  margin: 0;
+}
+
+
 /* Carousel styles */
 .carousel {
   overflow: hidden;
