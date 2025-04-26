@@ -202,4 +202,43 @@ img {
   background-color: #0097a7;
 }
 
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.caption {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.btn-code {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-code:hover {
+  background-color: #0097a7;
+}
+
+
 
