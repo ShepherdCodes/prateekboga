@@ -9,6 +9,11 @@ body {
   padding: 0;
   background-color: #fffbe6;
   color: #333;
+  line-height: 1.7
+}
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 header {
@@ -32,6 +37,12 @@ nav a {
 
 nav a:hover {
   color: #ffcc00;
+}
+
+nav a.active {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffcc00; /* maybe an accent color */
 }
 
 section {
