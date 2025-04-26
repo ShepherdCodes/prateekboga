@@ -144,10 +144,12 @@ img {
 .research-project {
   display: flex;
   gap: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
   align-items: flex-start;
   flex-wrap: wrap;
+  text-align: center;
 }
+
 
 .research-project img {
   width: 300px;
@@ -167,10 +169,6 @@ img {
   margin-top: 0.5em;
 }
 
-.research-project {
-  margin-bottom: 4em;
-  text-align: center;
-}
 
 .project-info {
   max-width: 800px;
