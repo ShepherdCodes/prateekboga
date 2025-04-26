@@ -115,23 +115,24 @@ img {
   max-width: 800px;
   margin: auto;
   border-radius: 12px;
+  position: relative;
 }
 
 .carousel-track {
   display: flex;
-  width: 300%;
-  animation: slide 100s infinite loop;
+  animation: scroll 20s linear infinite;
+  width: calc(200%); /* because you now have double images */
 }
 
 .carousel-track img {
   width: 100%;
+  max-width: 250px;
   object-fit: cover;
   border-radius: 12px;
+  margin-right: 10px;
 }
 
-@keyframes slide {
-  0%   { transform: translateX(0); }
-  33%  { transform: translateX(-100%); }
-  66%  { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
