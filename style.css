@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
   background-color: #fffbe6;
@@ -12,8 +12,8 @@ body {
 }
 
 header {
-  background-color: #87edff;
-  color: #000000;
+  background-color: #1a1a1a;
+  color: #fff;
   padding: 2em 0;
   text-align: center;
 }
@@ -24,8 +24,8 @@ nav {
 
 nav a {
   margin: 0 15px;
-  color: #1a1a1a;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline overline;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -38,7 +38,7 @@ section {
   padding: 3em 1em;
   max-width: 800px;
   margin: auto;
-  background-color: #fffbe6;
+  background-color: #fff;
   margin-bottom: 2em;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
