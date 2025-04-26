@@ -156,3 +156,50 @@ img {
   margin-top: 0.5em;
 }
 
+.research-project {
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+.project-info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-container {
+  margin-top: 1.5em;
+}
+
+.image-container img {
+  height: 300px; /* All images same height */
+  width: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 1em auto 0.5em;
+}
+
+.caption {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 0.5em;
+}
+
+.btn-publication {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-publication:hover {
+  background-color: #0097a7;
+}
+
+
