@@ -42,39 +42,6 @@
     <p>&copy; 2025 Prateek Boga. All rights reserved.</p>
   </footer>
 
-  <!-- Smooth Transition Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.body.classList.add('fade-in');
-    });
-
-    document.querySelectorAll('nav a').forEach(link => {
-      if (link.hostname === window.location.hostname) {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          document.body.classList.remove('fade-in');
-          setTimeout(() => {
-            window.location = this.href;
-          }, 300);
-        });
-      }
-    });
-  </script>
-  <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  document.querySelectorAll('.slide-in').forEach(section => {
-    observer.observe(section);
-  });
-</script>
 
 
 </body>
