@@ -5,12 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prateek Boga - Home</title>
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Prateek Boga | Amateur Astrophysicist" />
+  <meta property="og:description" content="Explore the adventures of Prateek Boga." />
+  <meta property="og:image" content="https://yourdomain.com/images/og-image.png" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Smooth Transition CSS -->
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+      line-height: 1.7; /* Increased line spacing */
+    }
+    body.fade-in {
+      opacity: 1;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+    nav a.active {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #ff8800; /* Accent color for active page */
+    }
+    /* Optional: style profile pic a little more cleanly */
+    .profile-pic {
+      max-width: 200px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
-<body>
+
+<body class="fade-in">
+
   <header>
     <h1>Prateek Boga</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="research.html">Research</a>
       <a href="skills.html">Skills</a>
       <a href="publications.html">Publications</a>
@@ -30,5 +66,25 @@
   <footer>
     <p>&copy; 2025 Prateek Boga. All rights reserved.</p>
   </footer>
+
+  <!-- Smooth Transition Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.classList.add('fade-in');
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+      if (link.hostname === window.location.hostname) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.body.classList.remove('fade-in');
+          setTimeout(() => {
+            window.location = this.href;
+          }, 300);
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>
