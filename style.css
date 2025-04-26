@@ -266,3 +266,28 @@ video {
 .btn-code:hover {
   background-color: #0097a7;
 }
+
+
+.orbit {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px dashed rgba(255,255,255,0.3);
+  border-radius: 50%;
+  animation: spin 6s linear infinite;
+}
+
+.planet {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+  top: 0;
+  left: 40px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
