@@ -257,6 +257,53 @@ video {
   left: 40px;
 }
 
+/* Timeline Styles */
+#timeline {
+  max-width: 800px;
+  margin: 4em auto;
+  padding: 2em 1em;
+}
+
+.timeline {
+  position: relative;
+  margin: 2em 0;
+  padding-left: 30px;
+  border-left: 3px solid #00bcd4;
+}
+
+.timeline-item {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  background: #00bcd4;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  top: 0;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #00bcd4;
+  margin-bottom: 0.5em;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.5em;
+  color: #333;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #555;
+}
+
+
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
