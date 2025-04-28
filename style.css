@@ -258,49 +258,56 @@ video {
 }
 
 /* Timeline Styles */
+/* Timeline */
 #timeline {
-  max-width: 800px;
-  margin: 4em auto;
-  padding: 2em 1em;
+  padding: 4em 1em;
+  background-color: #fff;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 2em;
+  color: #222;
 }
 
 .timeline {
   position: relative;
-  margin: 2em 0;
-  padding-left: 30px;
-  border-left: 3px solid #00bcd4;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-left: 2px solid #00bcd4; /* Light blue vertical line */
 }
 
 .timeline-item {
-  margin-bottom: 2em;
   position: relative;
+  margin-bottom: 3em;
 }
 
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -9px;
-  background: #00bcd4;
+.timeline-marker {
+  width: 14px;
+  height: 14px;
+  background-color: #00bcd4;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  top: 0;
+  position: absolute;
+  left: -8px;
+  top: 5px;
 }
 
-.timeline-date {
-  font-weight: bold;
-  color: #00bcd4;
-  margin-bottom: 0.5em;
+.timeline-content {
+  padding-left: 1em;
 }
 
 .timeline-content h3 {
-  margin: 0 0 0.5em;
-  color: #333;
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #1a1a1a;
 }
 
 .timeline-content p {
-  margin: 0;
+  margin: 0.5em 0 0 0;
   color: #555;
+  line-height: 1.6;
 }
 
 
