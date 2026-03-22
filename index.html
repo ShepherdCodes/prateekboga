@@ -3,161 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prateek Boga – Astrophysics Researcher</title>
+  <title>Prateek Boga - Home</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Book hero styles - attention grabbing */
-    .book-hero {
-      background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-      color: #ffcc00;
-      text-align: center;
-      padding: 4em 1em;
-      margin-bottom: 3em;
-    }
-    .book-hero h1 {
-      font-size: 2.8em;
-      margin-bottom: 0.5em;
-      color: white;
-    }
-    .book-hero p {
-      font-size: 1.3em;
-      margin-bottom: 1.5em;
-    }
-    .btn-book {
-      display: inline-block;
-      margin-top: 1em;
-      padding: 14px 32px;
-      background-color: #00bcd4;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
-    }
-    .btn-book:hover {
-      background-color: #0097a7;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
-    }
-  </style>
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Prateek Boga | Amateur Astrophysicist" />
+  <meta property="og:description" content="Explore the adventures of Prateek Boga." />
+  <meta property="og:image" content="https://yourdomain.com/images/og-image.png" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Smooth Transition CSS -->
 </head>
-<body>
+
+<body class="fade-in">
+
   <header>
     <h1>Prateek Boga</h1>
-    <p>Astrophysicist | Ultramarathon Runner | Entrepreneur</p>
     <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#timeline">Timeline</a>
-      <a href="intro-book.html">📖 Book</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="skills.html">Skills</a>
+      <a href="publications.html">Publications</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="travel.html">Travel Plans</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- BOOK HERO - New prominent section -->
-  <section class="book-hero">
-    <h1>Writing a Book for Academics</h1>
-    <p><strong>Science‑inspired mental tools</strong> for PhD stress, impostor syndrome, burnout, and academic uncertainty</p>
-    <p style="font-size: 1.1em; opacity: 0.9;">From my own chaos to frameworks that actually work</p>
-    <a href="intro-book.html" class="btn-book">Read the intro →</a>
+  <section>
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/profile.jpg" alt="Prateek Boga" class="profile-pic">
+      <p>Rocketed out of Aerospace Engineering at SASTRA University, I first slingshotted through the world of high‑resolution spectroscopy of exoplanetary atmospheres, chasing faint starlight for clues about distant worlds. Now I orbit the cosmos from the HFML‑FELIX laboratory in Nijmegen as a PhD candidate, using infrared spectroscopy to probe molecular anions of astrophysical interest and recreate interstellar chemistry in the lab. Somewhere between exoplanet spectra and cold ion beams, I’m trying to connect the dots between what the universe looks like through a telescope and how it actually behaves at the molecular level.</p>
+    </div>
   </section>
 
-  <main>
-    <!-- ABOUT SECTION -->
-    <section id="about" class="slide-in">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <!-- Replace with your actual photo -->
-        <img src="your-photo.jpg" alt="Prateek Boga">
-        <p>
-          Rocketed out of Aerospace Engineering at SASTRA University, I first slingshotted through the world of high‑resolution spectroscopy of exoplanetary atmospheres, chasing faint starlight for clues about distant worlds. Now I orbit the cosmos from the HFML‑FELIX laboratory in Nijmegen as a PhD candidate, using infrared spectroscopy to probe molecular anions of astrophysical interest and recreate interstellar chemistry in the lab. 
-          
-          Somewhere between exoplanet spectra and cold ion beams, I'm trying to connect the dots between what the universe looks like through a telescope and how it actually behaves at the molecular level.
-        </p>
-      </div>
-    </section>
+  <!-- Education Section -->
+  <section id="education">
+    <h2 class="timeline-title">Education</h2>
+    <div class="timeline">
 
-    <!-- BOOK TEASER SECTION -->
-    <section id="book-teaser" class="slide-in">
-      <h2>Upcoming Book: Self‑Development for Academics</h2>
-      <p>
-        My new book turns scientific concepts (physics, neuroscience, systems thinking) into practical mental models for the hidden pressures of academic life. Built from my own journey through visa nightmares, heartbreak, and breakthroughs.
-      </p>
-      <p>
-        <em>"If generic self‑help feels too fluffy, this one's for you."</em>
-      </p>
-      <a href="intro-book.html" class="btn-book">Read full intro & join waitlist</a>
-    </section>
 
-    <!-- RESEARCH SECTION -->
-    <section id="research" class="slide-in">
-      <h2>Research</h2>
-      <!-- Your existing research content here -->
-      <div class="research-project">
-        <h3>Current: Molecular Anion Spectroscopy (FELion-FELIX)</h3>
-        <div class="project-info">
-          <p>Infrared spectroscopy of astrophysically relevant molecular anions using the FELion instrument at the FELIX facility.</p>
-        </div>
-        <!-- Add images/buttons as needed -->
-      </div>
-    </section>
-
-    <!-- TIMELINE SECTION -->
-    <section id="timeline" class="slide-in">
-      <h2 class="timeline-title">Academic Timeline</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h3>PhD Candidate in Laboratory Astrophysics (2026 – ongoing)</h3>
-            <p>– Using the FELion instrument at FELIX facility, I do infrared spectroscopy of molecular anions which are of astrophysical interest.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h3>Master's in Astrophysics (2023 – 2025)</h3>
-            <p>– Cumulative GPA: 1.82 (German system) with thesis on High Resolution Spectroscopy of Ultra Hot Jupiters.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h3>B.Tech in Aerospace Engineering (2018 – 2022)</h3>
-            <p>– First class with distinction, GPA: 8.31/10.</p>
-          </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>HFML-FELIX, Nijmegen, Netherlands</h3>
+          <p><strong>PhD Candidate in laboratory Astrophysics</strong> (2026 – ongoing)</p>
+          <p>– Using the FELion instrument at FELIX facility, I do infrared spectroscopy of molecular anions which are of astrophysical interest.</p>
         </div>
       </div>
-    </section>
+      
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Ludwig Maximilian University Munich, Germany</h3>
+          <p><strong>Master's in Astrophysics</strong> (2023 – 2025)</p>
+          <p>– Cumulative GPA: 1.82 (German system) with thesis on High Resolution Spectroscopy of Ultra Hot Jupiters.</p>
+        </div>
+      </div>
 
-    <!-- Add your other sections: Gallery, Contact, etc. here -->
-  </main>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>SASTRA University, Thanjavur, India</h3>
+          <p><strong>B.Tech in Aerospace Engineering</strong> (2018 – 2022)</p>
+          <p>– First class with distinction, GPA: 8.31/10.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2026 Prateek Boga | 
-      <a href="intro-book.html">📖 Book</a> | 
-      <a href="#contact">Contact</a>
-    </p>
+    <p>&copy; 2025 Prateek Boga. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Slide-in animation (from your existing JS)
-    const elements = document.querySelectorAll('.slide-in');
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, observerOptions);
-    
-    elements.forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
