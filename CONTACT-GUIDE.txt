@@ -1,0 +1,58 @@
+CONTACT AND SOCIAL LINKS — BASED ONLY ON THE LATEST UPLOADS
+
+INSTALL
+1. Back up your current index.html, script.js and content.json.
+2. Copy/replace index.html, script.js, content.json from this package.
+3. Add contact-socials.css and the social-icons/ folder beside index.html.
+4. Place apply-contact-links.py beside your HTML pages. In that folder run:
+      python apply-contact-links.py
+   It updates only header links labelled Get in touch (with optional arrow)
+   in top-level HTML files. It does NOT replace any other pages from old copies.
+   Original changed HTML files are backed up in a sibling folder OUTSIDE the
+   website directory. It does not touch CSS, artwork, descriptions or scripts.
+5. Preview on localhost. Check homepage email button, header email links on all
+   pages, and all four profile destinations. Check mobile wrapping.
+6. Remove apply-contact-links.py from the publishing folder once it has run.
+   You can keep it elsewhere for future pages. Do not publish backup folders.
+
+EXACT SCOPE
+The source files were the newest uploaded index.html, script.js and content.json.
+The homepage HTML changes only its header contact href and adds one stylesheet.
+script.js changes only the email button label and social-link rendering.
+content.json changes only email and socials. All other JSON values are unchanged.
+No other HTML pages, existing stylesheets, images or data files are in this ZIP.
+Homepage hero Let’s connect continues to scroll to the contact section, where
+Contact me opens your email application. Existing non-header section links stay.
+The contact icons are local monochrome SVG representations with visible labels.
+All four profile URLs are exactly those supplied, including Instagram's query.
+No account/profile text was imported into your website.
+No external icon library, API, backend or new package is required.
+
+GITHUB — EXISTING REPOSITORY WORKFLOW
+If your working folder is already a clone of the repository, check:
+  git status
+  git remote -v
+Then review and commit your intended files; don't initialise a second repository.
+If it is NOT a Git working copy, clone your existing repository into a separate
+folder and copy the current finished website into it, preserving its .git folder.
+Do not copy old backup folders or ZIP packages into that clone.
+
+  git clone https://github.com/shepherdcodes/prateekboga.git prateekboga-publish
+  cd prateekboga-publish
+
+After copying the site files into that folder:
+  git status
+  git diff --stat
+  git add .
+  git diff --cached --stat
+  git commit -m "Update portfolio and contact profiles"
+  git push
+
+Review before git add .: private drafts and secrets must not be in the folder.
+Keep image folders, SVGs, blog indexes, article text and all JSON files in place.
+No absolute localhost URLs should be used in production links.
+Keep existing GitHub Pages settings if they already work. Otherwise Settings >
+Pages > Deploy from a branch, choose the branch you pushed and /(root) when
+index.html lives there. Don't replace an existing Actions workflow blindly.
+If the push fails, inspect the error; do not force-push.
+Browser rendering has not been tested in this environment.

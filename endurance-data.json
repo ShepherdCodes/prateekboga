@@ -1,0 +1,59 @@
+{
+  "name": "Prateek \"Shepherd\" Boga",
+  "heroTitle": "Pushing further, every year.",
+  "heroTagline": "Misogi events of the year",
+  "intro": "Progress is built over years. These photographs and finish lines tell parts of that story.",
+  "beforeImage": "endurance-images/before.jpeg",
+  "beforeAlt": "Earlier portrait of Prateek \"Shepherd\" Boga",
+  "afterImage": "endurance-images/after.jpeg",
+  "afterAlt": "Current portrait of Prateek \"Shepherd\" Boga",
+  "beforeCaption": "Where I started",
+  "afterCaption": "Still moving forward",
+  "events": [
+    {
+      "distanceKm": 21.1,
+      "name": "Brooks Munich Half Marathon",
+      "date": "30.06.2024",
+      "time": "02:20:14",
+      "image": "endurance-images/21.1.jpeg",
+      "imageAlt": "Prateek \"Shepherd\" Boga at the 21.1 km event",
+      "story": ""
+    },
+    {
+      "distanceKm": 42.2,
+      "name": "Allgäu Alpine Marathon",
+      "date": "10.08.2025",
+      "time": "06:03:09",
+      "image": "endurance-images/42.2.jpeg",
+      "imageAlt": "Prateek \"Shepherd\" Boga at the 42.2 km event",
+      "story": ""
+    },
+    {
+      "distanceKm": 51.3,
+      "name": "Linie 1629 Ultra",
+      "date": "06.06.2025",
+      "time": "05:17:18",
+      "image": "endurance-images/50.jpeg",
+      "imageAlt": "Prateek \"Shepherd\" Boga at the 51.3 km event",
+      "story": ""
+    },
+    {
+      "distanceKm": 73.1,
+      "name": "Mountainman Reit im Winkl XXL",
+      "date": "27.09.2025",
+      "time": "13:56:00",
+      "image": "endurance-images/73.jpeg",
+      "imageAlt": "Prateek \"Shepherd\" Boga at the 73.1 km event",
+      "story": ""
+    },
+    {
+      "distanceKm": 100.4,
+      "name": "Grizzly 100 - The brutal one",
+      "date": "27.11.2026",
+      "time": "16:34:32",
+      "image": "endurance-images/100.4.jpeg",
+      "imageAlt": "Prateek \"Shepherd\" Boga at the 100.4 km event",
+      "story": ""
+    }
+  ]
+}

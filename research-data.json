@@ -1,0 +1,65 @@
+{
+  "banner": {
+    "title": "Spectral fingerprinting of ions",
+    "tagline": "Attempting to answer the age old question - How did life form?",
+    "image": "research-banner.svg",
+    "position": "center"
+  },
+  "projects": [
+    {
+      "id": "ion-trap",
+      "scene": "ion-trap",
+      "label": "Molecular fingerprints",
+      "title": "Cryogenic Gas-phase Infrared Spectroscopy of Molecular Anions",
+      "institution": "Radboud University/HFML-FELIX",
+      "date": "2026 – ongoing",
+      "description": "Using the FELion instrument coupled to a widely tunable infrared free electron laser called FELIX, this work records infrared gas-phase spectra of molecular anions in vacuum conditions.",
+      "url": "",
+      "linkLabel": "View publication"
+    },
+    {
+      "id": "hot-jupiter",
+      "scene": "hot-jupiter",
+      "label": "Atmospheres beyond our own",
+      "title": "High Resolution Ground-based Spectroscopy of Ultra-hot Jupiters",
+      "institution": "Ludwig Maximillians University, Munich",
+      "date": "2024 – 2025",
+      "description": "Using the FOCES spectrograph at Wendelstein Observatory, this work explores atmospheric compositions of three ultra-hot Jupiters (KELT-20b, KELT-9b, and WASP-189b) through high-resolution spectroscopy.",
+      "url": "",
+      "linkLabel": "View publication"
+    },
+    {
+      "id": "filaments",
+      "scene": "filaments",
+      "label": "Where stars take shape",
+      "title": "Characterizing edge-effect in Star-Forming Filaments",
+      "institution": "SASTRA University & University of Duisburg-Essen",
+      "date": "2021–2022",
+      "description": "This simulation-based study examined how embedding in larger environments affects the edge-effect in star-forming filaments, offering a fresh lens on filament stability.",
+      "url": "",
+      "linkLabel": "View publication"
+    },
+    {
+      "id": "dark-matter",
+      "scene": "dark-matter",
+      "label": "The unseen architecture",
+      "title": "Dark Matter Mass elucidation by rotational curve decomposition",
+      "institution": "Tod’Aérs Fellowship",
+      "date": "2020–2021",
+      "description": "Led a team that analytically studied the distribution of dark matter mass around 34 spiral galaxies using least-squares regression of rotational curves.",
+      "url": "https://link.springer.com/article/10.1007/s12648-023-02655-6",
+      "linkLabel": "View publication"
+    },
+    {
+      "id": "solar",
+      "scene": "solar",
+      "label": "Reading our nearest star",
+      "title": "Exploring correlations between Solar activity and other solar parameters",
+      "institution": "SSERD Research Internship",
+      "date": "2020",
+      "description": "Identified inverse correlation between sunspot area and flare activity parameters and built an ensemble boosting ML model with 79% accuracy to predict Solar Flare Index.",
+      "url": "https://iafastro.directory/iac/archive/browse/IAC-22/A7/2/69897/",
+      "linkLabel": "View publication"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+:root{--rs-bg:#111714;--rs-surface:#19211c;--rs-text:#eeeede;--rs-muted:#a8b1a7;--rs-accent:#cad9a9;--rs-line:#ffffff19}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body.research-page{margin:0;background:var(--rs-bg);color:var(--rs-text);font-family:"DM Sans",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--rs-accent);outline-offset:6px}h1,h2{font-family:Manrope,sans-serif;font-weight:500;line-height:1.12;letter-spacing:-.055em}.rs-wrap{width:min(1180px,calc(100% - 64px));margin:auto}.rs-hero{position:relative;isolation:isolate;min-height: min(820px,calc(100svh - 83px));display:flex;align-items:center;background-image:linear-gradient(90deg,#111714e6 0%,#11171480 48%,#1117140d),linear-gradient(0deg,#111714,transparent 45%),url("research-banner.svg");background-size:cover;background-position:center}.rs-hero-inner{width:min(1180px,calc(100% - 64px));margin:auto;padding:100px 0 130px}.rs-eyebrow{font-size:10px;letter-spacing:2px;font-weight:600;color:var(--rs-accent);text-transform:uppercase;margin:0 0 26px}.rs-hero h1{font-size:clamp(58px,7.7vw,112px);max-width:950px;margin:0 0 30px;text-shadow:0 3px 30px #0005}.rs-tagline{font-size:clamp(17px,2vw,23px);max-width:570px;color:#d5dccb}.rs-explore{display:inline-flex;gap:35px;align-items:center;margin-top:45px;font-size:10px;letter-spacing:2px}.rs-explore span{font-size:22px;color:var(--rs-accent)}.rs-hero-note{position:absolute;right:4%;bottom:35px;font-size:8px;letter-spacing:2px;color:var(--rs-muted)}.rs-intro{padding:110px 0 80px;display:grid;grid-template-columns:1fr 2fr;border-bottom:1px solid var(--rs-line)}.rs-intro h2{font-size:clamp(34px,4vw,54px);margin:0 0 24px}.rs-intro p:not(.rs-eyebrow){color:var(--rs-muted);max-width:550px}.rs-story{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start}.rs-visual{position:sticky;top:115px;padding-top:30px}.rs-stage{position:relative;height:min(60vh,560px);min-height:340px;border:1px solid var(--rs-line);border-radius:5px;overflow:hidden;background:radial-gradient(ellipse at center,#24312880,transparent 75%),#141c17}.rs-stage-top,.rs-stage-bottom{position:absolute;left:24px;right:24px;display:flex;justify-content:space-between;gap:12px;z-index:1;pointer-events:none}.rs-stage-top{top:20px;font-size:8px;letter-spacing:1.6px;color:var(--rs-muted)}.rs-stage-bottom{bottom:26px;align-items:center;font-size:13px}.rs-live{font-size:7px;letter-spacing:1px;color:var(--rs-muted)}#rs-canvas{display:block;width:100%;height:100%}.rs-progress{position:absolute;bottom:0;left:0;right:0;height:2px;background:#cad9a915}.rs-progress span{display:block;width:0;height:100%;background:var(--rs-accent)}.rs-dots{display:flex;gap:12px;margin-top:20px}.rs-dots a{font-size:10px;color:var(--rs-muted);padding:6px 12px;border:1px solid var(--rs-line);border-radius:20px}.rs-dots a.is-active{background:var(--rs-accent);color:var(--rs-bg)}.rs-caption{font-size:10px;color:var(--rs-muted);max-width:380px}.rs-project{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding:100px 0;border-bottom:1px solid var(--rs-line);scroll-margin-top:100px}.rs-project h2{font-size:clamp(29px,3.1vw,43px);margin:0 0 26px}.rs-meta{display:flex;flex-wrap:wrap;gap:8px 16px;color:var(--rs-accent);font-size:11px}.rs-date{color:var(--rs-muted)}.rs-description{font-size:16px;color:var(--rs-muted);line-height:1.85;margin:26px 0}.rs-publication{display:inline-block;font-size:12px;border-bottom:1px solid #cad9a960;padding-bottom:7px}.rs-end{padding:130px 0}.rs-end h2{font-size:clamp(40px,5vw,68px);margin:0 0 32px}.rs-back{font-size:13px;color:var(--rs-accent)}.rs-footer{padding:25px 0;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--rs-line);color:var(--rs-muted);font-size:10px}.rs-skip{position:fixed;top:-100px;left:10px;z-index:100;background:var(--rs-accent);color:var(--rs-bg);padding:12px}.rs-skip:focus{top:10px}@media(min-width:1500px){.rs-project{min-height:800px}}@media(max-width:850px){.rs-story{gap:32px;grid-template-columns:1fr 1fr}.rs-stage-bottom{flex-direction:column;align-items:start}.rs-visual{top:100px}.rs-stage{min-height:300px}.rs-project h2{font-size:30px}}@media(max-width:650px){.rs-wrap{width:calc(100% - 40px)}.rs-hero{min-height:680px;min-height:85svh;background-position:60% center}.rs-hero-inner{width:calc(100% - 40px);padding:90px 0}.rs-hero h1{font-size:clamp(48px,11vw,72px)}.rs-hero-note{font-size:7px}.rs-intro{padding:65px 0 45px;display:block}.rs-story{display:block}.rs-visual{top:64px;z-index:5;padding-top:12px;background:var(--rs-bg);margin:0 -5px;padding-inline:5px}.rs-stage{height:30svh;min-height:205px;max-height:290px}.rs-stage-top{top:12px;left:16px;right:16px;font-size:7px}.rs-stage-bottom{left:16px;right:16px;bottom:14px;flex-direction:row;font-size:11px}.rs-live{display:none}.rs-dots{margin:8px 0;gap:8px}.rs-dots a{padding:4px 10px}.rs-caption{display:none}.rs-project{min-height:74svh;padding:60px 0;scroll-margin-top:calc(30svh + 135px)}.rs-project h2{font-size:31px}.rs-end{padding:80px 0}.rs-footer{flex-wrap:wrap}.rs-footer>span:last-child{display:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* RESEARCH — LARGER SUPPORTING TEXT */
+
+/* Numbered project labels:
+   "02 / ATMOSPHERES BEYOND OUR OWN" */
+.research-page .rs-project > .rs-eyebrow {
+  font-size: 13px;
+  letter-spacing: 1.6px;
+  line-height: 1.6;
+}
+
+/* Affiliation and year */
+.research-page .rs-meta {
+  font-size: 14px;
+  line-height: 1.7;
+  gap: 8px 20px;
+}
+
+/* Project descriptions */
+.research-page .rs-description {
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+/* Publication links */
+.research-page .rs-publication {
+  font-size: 14px;
+}
+
+/* Label inside the graphic panel:
+   "Atmospheres beyond our own" */
+.research-page #rs-scene-label {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* Top of the graphic panel:
+   "02 / 05" and "RESEARCH AT A GLANCE" */
+.research-page .rs-stage-top {
+  font-size: 10px;
+  letter-spacing: 1.3px;
+}
+
+/* "CONCEPTUAL VIEW" inside the graphic panel */
+.research-page .rs-live {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+/* Numbered navigation beneath the panel */
+.research-page .rs-dots a {
+  font-size: 12px;
+}
+
+/* Explanatory caption beneath the graphic */
+.research-page .rs-caption {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Keep supporting text comfortable on smaller screens */
+@media (max-width: 650px) {
+  .research-page .rs-project > .rs-eyebrow {
+    font-size: 12px;
+  }
+
+  .research-page .rs-meta {
+    font-size: 13px;
+  }
+
+  .research-page .rs-description {
+    font-size: 17px;
+  }
+
+  .research-page #rs-scene-label {
+    font-size: 15px;
+  }
+
+  .research-page .rs-stage-top {
+    font-size: 9px;
+  }
+}
+/* Header matched to the supplied Endurance page; Research only.
+   Normal document flow is intentional: Endurance's header is not sticky. */
+.research-page .rs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 4%;
+  background: #111714;
+  border-bottom: 1px solid #ffffff20;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.research-page .rs-brand {
+  font-size: 13px;
+  font-weight: 600;
+}
+.research-page .rs-header nav {
+  display: flex;
+  gap: 24px;
+  font-size: 13px;
+}
+.research-page .rs-header a:focus-visible {
+  outline: 2px solid #cad9a9;
+  outline-offset: 5px;
+}
+@media (max-width: 850px) {
+  .research-page .rs-header {
+    flex-wrap: wrap;
+  }
+  .research-page .rs-header nav {
+    gap: 18px;
+    font-size: 12px;
+  }
+}

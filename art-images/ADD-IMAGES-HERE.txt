@@ -1,0 +1,1 @@
+Put artwork photographs in this folder, then list them in art-data.json. No images are published automatically.

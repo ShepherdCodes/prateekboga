@@ -1,0 +1,22 @@
+{
+"heroTitle": "Where usefulness falls quiet.",
+"heroSubtitle": "A little space for beauty, curiosity, and making something simply because I can.",
+  "artworks": [
+    {
+      "title": "Touching the soul through the bones",
+      "image": "art-images/bones.jpeg",
+      "alt": " ",
+      "medium": "Oil on paper",
+      "year": "2026",
+      "piecesMade": 1
+    },
+    {
+      "title": "\"It's always the yellow dress\"",
+      "image": "art-images/always_yellow.jpeg",
+      "alt": " ",
+      "medium": "Acrylic on paper",
+      "year": "2025",
+      "piecesMade": 1
+    }
+]
+}

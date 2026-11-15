@@ -1,0 +1,77 @@
+ART PAGE — DROP-IN PACKAGE
+
+INSTALL
+Copy art.html, art.css, art.js, art-data.json, art-banner.svg and the art-images/
+folder beside index.html. Keep your existing brand-logo.css and favicon.svg.
+No Home, Research, Writing, Endurance, shared CSS or JavaScript is replaced.
+Your existing Art navigation link already points to art.html.
+Preview: http://localhost:8000/art.html using your existing local server.
+
+DESIGN
+The temporary original SVG uses free pencil-like lines, colour washes, and
+geometric constructions to suggest a creative process crossing disciplines.
+The banner has no visible title yet. A screen-reader title of Art is provided.
+Your philosophy is reproduced verbatim directly below the banner.
+Artwork photos are fully visible with preserved proportions, never cover-cropped.
+Desktop: image on the left, information on the right. Mobile: image, then details.
+The closing invitation is bold and links directly to your requested email.
+No cart, pricing, checkout, stock tracking or sales claims are included.
+
+ADD ARTWORK
+1. Add a photograph to art-images/, e.g. art-images/your-artwork.jpg.
+2. Edit art-data.json using the example below. Replace example values with your
+   actual details. The distributed index is intentionally empty; no art is invented.
+3. Add further objects to artworks, separated by commas. Rows display in array
+   order. Newest first means inserting your new work at the top of that array.
+4. Save, preview locally and commit the new image plus index update to GitHub.
+   Filenames are case-sensitive on hosting: match the extension and case exactly.
+
+{
+  "heroTitle": "",
+  "heroSubtitle": "",
+  "artworks": [
+    {
+      "title": "Your artwork title",
+      "image": "art-images/your-artwork.jpg",
+      "alt": "Describe the artwork for someone who cannot see it.",
+      "medium": "Your actual medium",
+      "year": "2026",
+      "piecesMade": 1
+    }
+  ]
+}
+
+FIELDS
+image: path relative to art.html. Use jpg/jpeg/png/webp or an image URL.
+alt: a useful description of the actual picture. Not a duplicate filename.
+medium and year: editable strings. year can also be a number.
+piecesMade: total number made, not remaining inventory. Use 1, 3, or free text
+such as 3-piece series. An empty or omitted field is hidden; no value is guessed.
+heroTitle/heroSubtitle: leave empty for a banner without text, or fill them later.
+The title and subtitle remain ordinary editable text, separate from SVG artwork.
+
+PUBLISHING
+Adding an image alone does not list it: you must add its entry to art-data.json.
+This is file-based publishing, not a visitor upload form. No backend is needed.
+JSON requires double quotes and no trailing commas or comments.
+The collection starts empty, showing Artwork will be added here.
+No demonstration artwork or metadata is presented as your work.
+Older uploaded images were not assigned to artworks because titles/media/dates
+and permission to use those particular images in this collection were not supplied.
+
+HEADER
+Copied from your latest supplied Endurance header, with Art marked active and
+SVG viewBox spelling normalised. Loads existing brand-logo.css after art.css.
+art.js never updates the header or brand; it only renders the collection/banner
+text. The Endurance logo-deleting JavaScript error is not repeated here.
+
+EMAIL
+The contact me link uses mailto:prateekboga9799@gmail.com and opens the visitor's
+configured email application. No separate contact page or existing contact.html
+is replaced. If no email application is configured, visitors can use the address
+from the link. Change the address in art.html if needed.
+
+CHECKS
+Structure, seven navigation links, Art active state, empty valid JSON and local
+asset references were checked programmatically. Browser appearance was not
+tested here. Preview desktop and phone widths and add one real image to verify.

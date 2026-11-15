@@ -1,0 +1,76 @@
+/* SHARED HEADER LOGO AND NAME */
+
+header a.site-brand {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 12px;
+  flex-shrink: 0;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Square logo container */
+header a.site-brand .site-logo,
+header a.site-brand #logo.site-logo {
+  display: block;
+
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-radius: 0 !important;
+  background: transparent;
+  overflow: hidden;
+
+  line-height: 0;
+}
+
+/* Square image */
+header a.site-brand .site-logo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-radius: 0 !important;
+
+  object-fit: contain;
+}
+
+/* Name beside the logo */
+header a.site-brand > span:not(.site-logo) {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  align-self: center;
+  line-height: 1.3;
+}
+
+@media (max-width: 540px) {
+  header a.site-brand {
+    gap: 9px;
+  }
+
+  header a.site-brand .site-logo,
+  header a.site-brand #logo.site-logo {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    flex-basis: 34px;
+  }
+}

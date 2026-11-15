@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap');
+.endurance-page{--en-bg:#111714;--en-surface:#19211c;--en-text:#eeeede;--en-muted:#a8b1a7;--en-accent:#cad9a9;--en-line:#ffffff20;margin:0;background:var(--en-bg);color:var(--en-text);font:16px/1.7 'DM Sans',sans-serif}.endurance-page *{box-sizing:border-box}.endurance-page a{color:inherit;text-decoration:none}.endurance-page a:focus-visible{outline:2px solid var(--en-accent);outline-offset:5px}.en-wrap{width:min(1200px,calc(100% - 48px));margin:auto}.en-header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4%;background:var(--en-bg);border-bottom:1px solid var(--en-line)}.en-brand{font-size:13px;font-weight:600}.en-header nav{display:flex;gap:24px;font-size:13px}.en-header [aria-current]{color:var(--en-accent);border-bottom:1px solid}.en-hero{padding:90px 0 80px}.en-eyebrow{font-size:10px;letter-spacing:2px;color:var(--en-accent)}.endurance-page h1,.endurance-page h2,.endurance-page h3{font-family:Manrope,sans-serif;line-height:1.12;letter-spacing:-.05em;font-weight:500}.endurance-page h1{font-size:clamp(48px,7vw,92px);max-width:1000px;margin:25px 0}.en-tagline{font-size:clamp(20px,2.5vw,30px);color:var(--en-accent);margin:0 0 20px}.en-intro{max-width:630px;color:var(--en-muted)}.en-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:40px 0 30px}.en-comparison figure{margin:0}.en-photo{height:clamp(290px,40vw,530px);border:1px solid var(--en-line);background:linear-gradient(150deg,#293529,#19211c);display:grid;place-items:center;color:var(--en-muted);overflow:hidden;padding:20px;text-align:center}.en-photo:has(img){padding:0}.en-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}.en-comparison figcaption{padding:12px 0;color:var(--en-muted);font-size:13px}.en-link{border-bottom:1px solid var(--en-accent);font-size:13px}.en-section-head{border-top:1px solid var(--en-line);padding:60px 0 30px}.endurance-page h2{font-size:clamp(36px,4vw,54px)}.en-section-head>p:last-child{color:var(--en-muted)}.en-story-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:start}.en-chart-panel{position:sticky;top:30px;padding:25px 0}.en-chart-heading{display:flex;justify-content:space-between;gap:20px;align-items:center;color:var(--en-muted);font-size:12px}#en-current{font-size:32px;color:var(--en-accent);font-variant-numeric:tabular-nums}.en-chart-panel svg{width:100%;height:auto;overflow:visible;margin:25px 0 0}.en-disclaimer{font-size:11px;color:var(--en-muted);max-width:570px}.en-jumps{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.en-jumps a{padding:6px 10px;border:1px solid var(--en-line);font-size:11px;border-radius:30px}.en-jumps a.is-active{background:var(--en-accent);color:var(--en-bg)}.en-event{min-height:95vh;padding:70px 0;scroll-margin-top:30px;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--en-line)}.en-event h3{font-size:34px;margin:15px 0}.en-event p{color:var(--en-muted)}.en-event .en-photo{height:360px}.en-event .en-distance{font-size:45px;color:var(--en-accent);margin:0;font-family:Manrope,sans-serif}.en-event .en-time{font-variant-numeric:tabular-nums;font-size:20px;color:var(--en-text);margin-top:20px}.en-outro{text-align:center;padding:100px 0}.en-outro p{color:var(--en-muted)}.en-button{display:inline-block;background:var(--en-accent);color:var(--en-bg)!important;padding:13px 22px;font-size:13px;margin:15px 0}.en-footer{border-top:1px solid var(--en-line);padding:25px 0;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:var(--en-muted)}.en-skip{position:absolute;top:-100px;background:var(--en-accent);color:var(--en-bg)!important;padding:10px}.en-skip:focus{top:0;z-index:10}@media(max-width:850px){.en-story-layout{display:block}.en-chart-panel{top:0;background:var(--en-bg);z-index:2;padding:10px 0;border-bottom:1px solid var(--en-line)}.en-chart-panel svg{max-height:170px;margin:0}.en-chart-heading{font-size:10px}#en-current{font-size:23px}.en-disclaimer{font-size:10px;line-height:1.4;margin:0}.en-jumps{gap:5px;margin-top:8px}.en-jumps a{font-size:10px;padding:3px 8px}.en-event{min-height:90vh;padding:40px 0;scroll-margin-top:340px}.en-event .en-photo{height:330px}.en-header{flex-wrap:wrap}.en-header nav{gap:18px;font-size:12px}.en-hero{padding-top:55px}.en-comparison{gap:12px}.en-photo{height:320px}}@media(max-width:480px){.en-wrap{width:calc(100% - 32px)}.en-comparison .en-photo{height:260px}.en-event .en-photo{height:290px}.en-chart-panel svg{max-height:130px}.en-footer{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){.en-chart-panel{position:relative;top:0}.en-event{min-height:0;padding:45px 0}.en-story-layout{display:block}.en-chart-panel svg #en-runner{display:none}}/* =========================================================
+   ENDURANCE HERO — BLENDED BEFORE / AFTER PANORAMA
+   Append this block at the END of endurance.css.
+   ========================================================= */
+
+/* Turn the existing hero into a full-width photographic banner. */
+.endurance-page .en-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  width: 100%;
+  max-width: none;
+  min-height: 780px;
+  min-height: min(900px, 94svh);
+
+  margin: 0;
+  padding:
+    clamp(90px, 12vh, 160px)
+    max(24px, calc((100% - 1200px) / 2))
+    100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  background: var(--en-bg);
+}
+
+/* Keep the existing hero copy above the photographs and overlays. */
+.endurance-page .en-hero > :not(.en-comparison) {
+  position: relative;
+  z-index: 3;
+}
+
+/* The existing photo pair becomes the background layer. */
+.endurance-page .en-hero .en-comparison {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  display: block;
+  margin: 0;
+
+  pointer-events: none;
+}
+
+/* Each photo occupies more than half the banner.
+   Their overlapping masks create the soft blend. */
+.endurance-page .en-hero .en-comparison figure {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 66%;
+  height: 100%;
+  margin: 0;
+}
+
+/* Earlier photograph: left side, fading into the centre. */
+.endurance-page .en-hero .en-comparison figure:first-child {
+  left: 0;
+  z-index: 1;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 48%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 48%,
+    transparent 100%
+  );
+}
+
+/* Current photograph: right side, fading in from the centre. */
+.endurance-page .en-hero .en-comparison figure:last-child {
+  right: 0;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 52%,
+    #000 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 52%,
+    #000 100%
+  );
+}
+
+/* Override the old fixed photo-box dimensions. */
+.endurance-page .en-hero .en-comparison .en-photo {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+
+  padding: 0;
+  border: 0;
+
+  background: var(--en-surface);
+
+  /* Hide placeholder text if an image hasn't been added yet. */
+  color: transparent;
+}
+
+/* Fill the banner while allowing different crops for each image. */
+.endurance-page .en-hero .en-photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* Adjust these positions to keep your face/body in view. */
+.endurance-page .en-hero #en-before img {
+  object-position: 45% 35%;
+  filter: saturate(0.4) contrast(0.95);
+}
+
+.endurance-page .en-hero #en-after img {
+  object-position: 60% 35%;
+  filter: saturate(0.95) contrast(1.05);
+}
+
+/* Remove visible captions without removing their HTML elements.
+   The existing JavaScript can still update them normally. */
+.endurance-page .en-hero .en-comparison figcaption {
+  display: none;
+}
+
+/* Darken the text area without hiding both photographs. */
+.endurance-page .en-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(9, 15, 12, 0.72) 0%,
+      rgba(9, 15, 12, 0.52) 38%,
+      rgba(9, 15, 12, 0.12) 75%,
+      rgba(9, 15, 12, 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(9, 15, 12, 0.12) 0%,
+      transparent 45%,
+      var(--en-bg) 100%
+    );
+}
+
+/* A subtle rising trail connects the two sides of the panorama. */
+.endurance-page .en-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+
+  left: 7%;
+  right: 7%;
+  bottom: 14%;
+
+  height: 70px;
+
+  pointer-events: none;
+  opacity: 0.5;
+
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 80' fill='none'%3E%3Cpath d='M10 68 C220 68 300 50 450 48 S720 22 990 12' stroke='%23cad9a9' stroke-width='1.5' stroke-dasharray='3 8'/%3E%3Ccircle cx='10' cy='68' r='4' fill='%23cad9a9'/%3E%3Ccircle cx='990' cy='12' r='4' fill='%23cad9a9'/%3E%3C/svg%3E")
+    center / 100% 100% no-repeat;
+}
+
+/* Headline sizing and line breaks within the panorama. */
+.endurance-page .en-hero h1 {
+  max-width: 780px;
+  margin: 24px 0;
+
+  font-size: clamp(54px, 6.8vw, 94px);
+
+  text-wrap: balance;
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.22);
+}
+
+.endurance-page .en-hero .en-tagline {
+  max-width: 650px;
+  margin-bottom: 18px;
+
+  color: var(--en-accent);
+}
+
+.endurance-page .en-hero .en-intro {
+  max-width: 480px;
+  margin-bottom: 30px;
+
+  color: #e0e4dc;
+}
+
+.endurance-page .en-hero .en-link {
+  margin-top: 12px;
+  color: var(--en-text);
+}
+
+
+/* =========================================================
+   MOBILE — PHOTOS ABOVE, TEXT OVER A DARK LOWER AREA
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .endurance-page .en-hero {
+    min-height: 840px;
+    min-height: max(780px, 95svh);
+
+    padding: 360px 24px 65px;
+
+    justify-content: flex-end;
+  }
+
+  .endurance-page .en-hero .en-comparison {
+    bottom: auto;
+    height: 570px;
+  }
+
+  .endurance-page .en-hero .en-comparison figure {
+    width: 72%;
+  }
+
+  .endurance-page .en-hero #en-before img {
+    object-position: 45% 25%;
+  }
+
+  .endurance-page .en-hero #en-after img {
+    object-position: 60% 25%;
+  }
+
+  .endurance-page .en-hero::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(9, 15, 12, 0.08) 0%,
+        rgba(9, 15, 12, 0.12) 24%,
+        rgba(9, 15, 12, 0.75) 47%,
+        var(--en-bg) 68%,
+        var(--en-bg) 100%
+      );
+  }
+
+  .endurance-page .en-hero::after {
+    top: 280px;
+    bottom: auto;
+
+    left: 5%;
+    right: 5%;
+
+    height: 55px;
+    opacity: 0.4;
+  }
+
+  .endurance-page .en-hero h1 {
+    max-width: 540px;
+    font-size: clamp(46px, 10vw, 64px);
+  }
+
+  .endurance-page .en-hero .en-tagline {
+    font-size: 21px;
+  }
+
+  .endurance-page .en-hero .en-intro {
+    font-size: 15px;
+  }
+}
+
+
+
+/* RACE STORIES: let each photograph determine its own height. */
+.endurance-page .en-event .en-photo:has(img) {
+  display: block;
+  height: auto;
+  padding: 0;
+}
+
+.endurance-page .en-event .en-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* =========================================================
+   HERO REFINEMENT
+   Desktop: text on the left, photo panorama on the right.
+   Mobile: retain the existing stacked composition.
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .endurance-page .en-hero {
+    /*
+      Change 64% to 70% or 75% for a larger photo area.
+      The text column adjusts automatically.
+    */
+    --hero-photo-width: 75%;
+    --hero-gap: 32px;
+
+    min-height: 760px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  /* Reserve the right-hand area exclusively for photographs. */
+  .endurance-page .en-hero .en-comparison {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+
+    width: var(--hero-photo-width);
+    height: 100%;
+  }
+
+  /* Keep all hero copy inside the left-hand area. */
+  .endurance-page .en-hero > :not(.en-comparison) {
+    max-width: calc(
+      100% - var(--hero-photo-width) - var(--hero-gap)
+    );
+  }
+
+  /*
+    A slightly smaller headline suits the dedicated text column.
+    It will wrap naturally rather than extend over the photographs.
+  */
+  .endurance-page .en-hero h1 {
+    font-size: clamp(40px, 4vw, 64px);
+    line-height: 1.1;
+    text-wrap: balance;
+    overflow-wrap: normal;
+  }
+
+  .endurance-page .en-hero .en-tagline {
+    font-size: clamp(18px, 1.8vw, 25px);
+    line-height: 1.45;
+  }
+
+  .endurance-page .en-hero .en-intro {
+    font-size: 15px;
+  }
+
+  /* Each photograph gets approximately half of the photo area. */
+  .endurance-page .en-hero .en-comparison figure {
+    width: 52%;
+  }
+
+  /* Keep the whole image visible. */
+  .endurance-page .en-hero #en-before img,
+  .endurance-page .en-hero #en-after img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Narrow blend between the photographs. */
+  .endurance-page .en-hero .en-comparison figure:first-child {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 90%,
+      transparent 100%
+    );
+
+    mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 90%,
+      transparent 100%
+    );
+  }
+
+  .endurance-page .en-hero .en-comparison figure:last-child {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 10%,
+      #000 100%
+    );
+
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 10%,
+      #000 100%
+    );
+  }
+
+  /*
+    Remove the strong left-to-right dark overlay.
+    Only fade the photographs gently into the page at the bottom.
+  */
+  .endurance-page .en-hero::before {
+    left: auto;
+    right: 0;
+    width: var(--hero-photo-width);
+
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 65%,
+      var(--en-bg) 100%
+    );
+  }
+
+  /* Keep the decorative trail within the photo area too. */
+  .endurance-page .en-hero::after {
+    left: calc(100% - var(--hero-photo-width) + 3%);
+    right: 3%;
+    bottom: 12%;
+  }
+}
+
+/* =========================================================
+   STRONGER PHOTO BLEND + MORE VISIBLE CONNECTING TRAIL
+   ========================================================= */
+
+/* Give the connecting trail more presence on every screen. */
+.endurance-page .en-hero::after {
+  opacity: 0.95;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 80' fill='none'%3E%3Cpath d='M10 68 C220 68 300 50 450 48 S720 22 990 12' stroke='%23cad9a9' stroke-width='10' stroke-opacity='.12'/%3E%3Cpath d='M10 68 C220 68 300 50 450 48 S720 22 990 12' stroke='%23cad9a9' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='10' cy='68' r='6' fill='%23cad9a9'/%3E%3Ccircle cx='990' cy='12' r='6' fill='%23cad9a9'/%3E%3C/svg%3E");
+
+  filter: drop-shadow(0 0 6px rgba(202, 217, 169, 0.35));
+}
+
+@media (min-width: 901px) {
+  /*
+    Increase overlap so there is room for a broader,
+    softer transition between the photographs.
+  */
+  .endurance-page .en-hero .en-comparison figure {
+    width: 60%;
+  }
+
+  /* Earlier photograph: start fading sooner. */
+  .endurance-page .en-hero .en-comparison figure:first-child {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 62%,
+      transparent 100%
+    );
+
+    mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 62%,
+      transparent 100%
+    );
+  }
+
+  /* Current photograph: fade in more gradually. */
+  .endurance-page .en-hero .en-comparison figure:last-child {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 38%,
+      #000 100%
+    );
+
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      #000 38%,
+      #000 100%
+    );
+  }
+
+  /* Stronger bottom fade into the page background. */
+  .endurance-page .en-hero::before {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 40%,
+      var(--en-bg) 100%
+    );
+  }
+
+  /*
+    Lift the trail above the darkest bottom area.
+    It remains within the right-hand photo panel.
+  */
+  .endurance-page .en-hero::after {
+    bottom: 20%;
+    height: 90px;
+  }
+}
+
+
+/* Desktop: let the headline extend into the photo area. */
+@media (min-width: 901px) {
+  .endurance-page .en-hero h1 {
+    width: 52%;
+    max-width: 52%;
+
+    font-size: clamp(48px, 4.8vw, 76px);
+    line-height: 1.1;
+
+    /* Override the earlier rightward shift, if you added it. */
+    transform: none;
+
+    /* Keep the headline readable where it crosses the image. */
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
+  }
+}

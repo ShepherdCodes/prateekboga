@@ -1,0 +1,46 @@
+HEADER CONSISTENCY PATCH
+
+Back up the corresponding files, then replace only:
+  index.html
+  endurance.html
+  research.html
+  writing.html
+  brand-logo.css
+
+This archive does NOT contain or replace endurance.css, research.css,
+styles.css, writing.css, any JavaScript, JSON, photographs or banner artwork.
+
+CHANGES
+- All four pages load brand-logo.css after their page stylesheets.
+- Shared header-only rules match Endurance: 24px navigation gap, 13px menu
+  font, 22px 4% padding, and the exact color/border declarations of its active
+  link. At <=850px the gap becomes 18px and font 12px, matching Endurance.
+- Home's old narrow-screen link-hiding behaviour is overridden so all menus
+  behave like Endurance. Header height can still grow when links wrap.
+- Homepage header now uses Endurance's normal-flow, non-sticky behaviour.
+- Each page has exactly one aria-current="page" navigation link.
+- Only Home is active on index; Explore/Contact remain section-jump links.
+- Logo SVG artwork is embedded directly in each header (same uploaded SVG),
+  eliminating the separate image request for the visible header logo.
+  Browser-tab favicon declarations still reference your existing favicon.svg.
+- Main content, footer and scripts were checked unchanged in all four files.
+- The Endurance stylesheet and content were not modified.
+
+LOGO DIAGNOSIS
+The uploaded Endurance already includes the image and brand stylesheet, and
+its supplied CSS contains no header-image-hiding rule. The files alone do not
+establish the browser/runtime reason it was missing. Inline SVG bypasses an
+external header-image loading issue; it is not proof of the original cause.
+
+INSTALL / CHECK
+Keep existing favicon.svg. Replace the five files together, save and hard
+refresh each page. Check the square logo, active underline, phone navigation
+and unchanged content. Browser rendering was not tested in this environment.
+If a logo disappears only after page load, scripts not supplied here may be
+changing the header: provide the relevant JavaScript and a console screenshot.
+
+OTHER PAGES
+blogs.html and blog.html were not supplied and are not overwritten. Their
+existing shared CSS link will gain this header styling. If needed, move that
+link after writing.css; copy the updated wr-brand link from writing.html and
+add aria-current="page" to Upcoming book. The same applies to future Art pages.

@@ -1,0 +1,60 @@
+{
+  "name": "Prateek \"Shepherd\" Boga",
+  "roles": "Scientist. Ultrarunner. Author. Artist.",
+  "intro": "In pursuit of excellence in all aspects, and hopefully never achieving it.",
+  "logoImage": "",
+  "email": "",
+  "contextTitle": "More than one way to explore.",
+  "context": "I work in computational molecular spectroscopy and astrochemistry. Away from research, I explore endurance running and cycling, write, and make art. This is a place to bring those pursuits together: the work, the process, and what comes next.",
+  "tiles": [
+    {
+      "title": "Research",
+      "label": "MOLECULES \u00b7 SPECTRA \u00b7 SPACE",
+      "description": "Exploring molecular spectroscopy, computational chemistry, and astrochemistry.",
+      "detail": "Selected publications, research projects, and scientific tools will appear here.",
+      "url": "research.html"
+    },
+    {
+      "title": "Endurance",
+      "label": "RUNNING \u00b7 CYCLING \u00b7 EXPLORATION",
+      "description": "Long distances, patient preparation, and the stories that happen along the way.",
+      "detail": "Race results, cycling journeys, and partnership opportunities will appear here.",
+      "url": "endurance.html"
+    },
+    {
+      "title": "Writing",
+      "label": "A BOOK IN THE MAKING",
+      "description": "Ideas finding their shape on the page. A forthcoming book, and the journey of writing it.",
+      "detail": "The book title, cover, synopsis, and release details will appear here once confirmed.",
+      "url": "writing.html"
+    },
+    {
+      "title": "Art",
+      "label": "OBSERVATION \u00b7 EXPRESSION \u00b7 PRACTICE",
+      "description": "Another way of paying attention. A growing collection of visual experiments.",
+      "detail": "Selected artworks and their stories will appear here.",
+      "url": "art.html"
+    }
+  ],
+  "metrics": [
+    {
+      "value": 5,
+      "label": "Publications",
+      "sourceUrl": "",
+      "updatedAt": "11/11/2026"
+    },
+    {
+      "value": 1669.1,
+      "label": "Total running distance \u00b7 km",
+      "sourceUrl": "",
+      "updatedAt": "11/11/2026"
+    },
+    {
+      "value": 100.4,
+      "label": "Longest single run \u00b7 km",
+      "sourceUrl": "",
+      "updatedAt": "11/11/2026"
+    }
+  ],
+  "socials": []
+}

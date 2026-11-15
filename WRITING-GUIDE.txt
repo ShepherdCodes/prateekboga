@@ -1,0 +1,89 @@
+WRITING — DROP-IN INSTALLATION AND BLOG GUIDE
+
+INSTALL
+Copy writing.html, writing.css, writing.js, writing-banner.svg, blogs.html,
+blog.html and the blogs/ folder into the same folder as index.html.
+Do not replace any homepage, Research, or Endurance files.
+The existing Upcoming book navigation link already points to writing.html.
+Use your existing local server and open http://localhost:8000/writing.html.
+No build command or package installation is needed.
+When adding to GitHub, commit all these files, retaining the blogs/ folder.
+
+THE BOOK
+The two description paragraphs condense your uploaded intro-book.html. The title
+uses your confirmed spelling: Being a Nerd might save your life. Your existing
+Google Forms waiting-list URL is retained. The abstract banner is conceptual
+artwork, not a book cover, scientific model, or depiction of a specific event.
+It portrays tangled paths becoming a clearer route, with branching connections.
+The page intentionally omits medical statistics and unsupported release details.
+Past publications use the titles, collections, publisher, and retailer links you
+provided. No dates or story summaries have been added.
+
+HEADER
+Uses the supplied Endurance header wording, spacing, sizes and breakpoint.
+Only homepage section destinations are qualified with index.html so they work
+from Writing, the archive and the reader. No Endurance file was modified.
+
+ADD YOUR FIRST POST
+1. Write a plain text article in Notepad. Save as UTF-8, with extension .md
+   for Markdown or .txt for plain text. In Windows, choose Save as type:
+   All files, to avoid accidentally saving your-first-post.md.txt.
+2. Put it in blogs/, e.g. blogs/your-first-post.md. Use lowercase hyphenated names.
+3. Open blogs/posts.json. It initially contains [] (no invented published posts).
+   Replace [] with this example, changing all fields to your actual content:
+
+[
+  {
+    "slug": "your-first-post",
+    "title": "Your actual article title",
+    "date": "2026-11-14",
+    "file": "blogs/your-first-post.md",
+    "excerpt": "Your optional short introduction."
+  }
+]
+
+4. Save, preview on localhost, and commit both the post and updated index to GitHub.
+For later posts, add another object within the same array, separated by a comma.
+No trailing commas or comments: JSON must be valid. A slug must be unique and use
+lowercase letters/numbers and single hyphens. date must be YYYY-MM-DD (use a real
+calendar date). file is relative to the website root and must begin blogs/ and
+end in .md or .txt. excerpt is optional. Posts sort newest first by date, with
+slug as the tie-breaker. Every entry in the index is public; keep drafts OUT of
+posts.json and out of the public repository if they should remain private.
+
+FEATURES
+Writing shows the newest three entries. The archive shows six posts per page.
+The reader uses blog.html?post=your-first-post; no new HTML design per article.
+Empty, missing-index, and missing-article states have distinct messages.
+post-template.md is only a writing aid: it is not indexed or displayed as a post.
+The original intro-book.html is not changed or redirected by this package.
+
+MARKDOWN SUPPORTED
+Paragraphs, headings (# through ###### displayed as article subsections),
+**bold**, *italics*, `inline code`, fenced code blocks (triple backticks),
+flat numbered/bullet lists, > blockquotes, --- dividers, and [links](https://...).
+Standalone image lines: ![Description](blogs/images/photo.jpg).
+Add the image files yourself. Images keep their proportions.
+Relative image/link destinations resolve from the site root (where blog.html
+lives), not the article file's folder. Use blogs/images/... accordingly.
+This is a small custom Markdown subset, not full CommonMark. Nested lists,
+tables, nested inline formatting, inline images, raw HTML and DOCX are not
+supported. Plain .txt files display paragraphs without Markdown interpretation.
+Raw HTML in articles is displayed as text, not executed. Script URL schemes
+are blocked. Do not use an H1 title in the file; posts.json supplies the title.
+
+WORD DOCUMENTS
+Draft in Word if preferred, then copy/save your article text as .md or .txt.
+There is no DOCX upload/conversion service and no visitor-facing upload form.
+All publishing happens by adding and committing files to your repository.
+
+CHECK BEFORE PUBLISHING
+Check navigation, the waiting-list link, publication links, phone layout and
+one real blog entry. The archive is initially empty, intentionally. To test
+pagination, use seven or more real or temporary local test entries; do not
+publish dummy entries. Test materials were not included in the blog index.
+Google Fonts falls back to system fonts if unavailable. The visual banner is
+included locally; no image service is needed at runtime. Article content is
+loaded in the browser, so individual posts do not have pre-rendered unique
+social-preview tags; that would require a later build-based publishing setup.
+Browser rendering has not been tested in this execution environment.

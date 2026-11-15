@@ -1,0 +1,134 @@
+/* SHARED HEADER LOGO AND NAME */
+
+header a.site-brand {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 12px;
+  flex-shrink: 0;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Square logo container */
+header a.site-brand .site-logo,
+header a.site-brand #logo.site-logo {
+  display: block;
+
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-radius: 0 !important;
+  background: transparent;
+  overflow: hidden;
+
+  line-height: 0;
+}
+
+/* Square image */
+header a.site-brand .site-logo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-radius: 0 !important;
+
+  object-fit: contain;
+}
+
+/* Name beside the logo */
+header a.site-brand > span:not(.site-logo) {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  align-self: center;
+  line-height: 1.3;
+}
+
+@media (max-width: 540px) {
+  header a.site-brand {
+    gap: 9px;
+  }
+
+  header a.site-brand .site-logo,
+  header a.site-brand #logo.site-logo {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    flex-basis: 34px;
+  }
+}
+/* HEADER CONSISTENCY — Endurance is the reference.
+   Shared header-only rules, loaded after each page's stylesheet. */
+body > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 4%;
+  background: #111714;
+  border-bottom: 1px solid #ffffff20;
+  position: static;
+  backdrop-filter: none;
+  font: 16px/1.7 'DM Sans', sans-serif;
+}
+body > header a.site-brand {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: normal;
+  max-width: none;
+}
+body > header nav {
+  display: flex;
+  align-items: normal;
+  gap: 24px;
+  font-size: 13px;
+}
+body > header nav a,
+body > header nav a:last-child,
+body > header nav a:not(:last-child) {
+  display: inline;
+  color: inherit;
+  border-bottom: 0;
+  text-decoration: none;
+}
+/* Endurance's exact declarations; same green and 1px underline. */
+body > header nav a[aria-current="page"] {
+  color: #cad9a9;
+  border-bottom: 1px solid;
+}
+body > header a:focus-visible {
+  outline: 2px solid #cad9a9;
+  outline-offset: 5px;
+}
+header a.site-brand .site-logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+@media (max-width: 850px) {
+  body > header {
+    flex-wrap: wrap;
+  }
+  body > header nav {
+    gap: 18px;
+    font-size: 12px;
+  }
+}
